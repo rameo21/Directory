@@ -11,7 +11,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MMLib.Ocelot.Provider.AppConfiguration" Version="2.0.0" />
+    <PackageReference Include="MMLib.SwaggerForOcelot" Version="4.7.0" />
+    <PackageReference Include="Ocelot" Version="17.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

@@ -26,19 +26,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReportAPI", "ReportAPI", "{19D579D9-B6E8-46C1-8FFD-7F475C1B3309}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportAPI", "ReportAPI\ReportAPI\ReportAPI.csproj", "{F8F6BBAA-49F8-4A65-9087-63934502B71A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportAPI", "ReportAPI\ReportAPI\ReportAPI.csproj", "{F8F6BBAA-49F8-4A65-9087-63934502B71A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreLib", "CoreLib", "{64473192-6CE5-4B4E-9BCE-84CC068F2B89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportAPI.Infrastructure", "ReportAPI\ReportAPI.Infrastructure\ReportAPI.Infrastructure.csproj", "{2F454784-1E32-495D-8D86-337CEDA513A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportAPI.Infrastructure", "ReportAPI\ReportAPI.Infrastructure\ReportAPI.Infrastructure.csproj", "{2F454784-1E32-495D-8D86-337CEDA513A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportAPI.BusinessLayer", "ReportAPI\ReportAPI.BusinessLayer\ReportAPI.BusinessLayer.csproj", "{3F41DEAB-FDE1-4048-8202-0481E27FDB30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportAPI.BusinessLayer", "ReportAPI\ReportAPI.BusinessLayer\ReportAPI.BusinessLayer.csproj", "{3F41DEAB-FDE1-4048-8202-0481E27FDB30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportAPI.DataLayer", "ReportAPI.DataLayer\ReportAPI.DataLayer.csproj", "{97483CA6-1723-4664-8491-9CBC4F94E26D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportAPI.DataLayer", "ReportAPI.DataLayer\ReportAPI.DataLayer.csproj", "{97483CA6-1723-4664-8491-9CBC4F94E26D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportAPI.EntityLayer", "ReportAPI.EntityLayer\ReportAPI.EntityLayer.csproj", "{020F9B75-3043-4233-AA79-84EAB71BC0C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportAPI.EntityLayer", "ReportAPI.EntityLayer\ReportAPI.EntityLayer.csproj", "{020F9B75-3043-4233-AA79-84EAB71BC0C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportRequestBGService", "ReportRequestBGService\ReportRequestBGService.csproj", "{077CB898-B791-4862-86A6-072603484348}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportRequestBGService", "ReportRequestBGService\ReportRequestBGService.csproj", "{077CB898-B791-4862-86A6-072603484348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.ContactAPI.BusinessLayer", "ContactAPI\Test.ContactAPI.BusinessLayer\Test.ContactAPI.BusinessLayer.csproj", "{5EA55B7D-8E5E-4D6A-AE82-1FE6795DEA33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -94,6 +96,10 @@ Global
 		{077CB898-B791-4862-86A6-072603484348}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{077CB898-B791-4862-86A6-072603484348}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{077CB898-B791-4862-86A6-072603484348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EA55B7D-8E5E-4D6A-AE82-1FE6795DEA33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EA55B7D-8E5E-4D6A-AE82-1FE6795DEA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EA55B7D-8E5E-4D6A-AE82-1FE6795DEA33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EA55B7D-8E5E-4D6A-AE82-1FE6795DEA33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -112,6 +118,7 @@ Global
 		{97483CA6-1723-4664-8491-9CBC4F94E26D} = {64473192-6CE5-4B4E-9BCE-84CC068F2B89}
 		{020F9B75-3043-4233-AA79-84EAB71BC0C0} = {64473192-6CE5-4B4E-9BCE-84CC068F2B89}
 		{077CB898-B791-4862-86A6-072603484348} = {19D579D9-B6E8-46C1-8FFD-7F475C1B3309}
+		{5EA55B7D-8E5E-4D6A-AE82-1FE6795DEA33} = {17D232ED-00D4-46A6-A0EC-148DEC227707}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {497387FE-A0D8-41BC-A0A8-548728BAE145}
