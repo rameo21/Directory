@@ -62,7 +62,20 @@ namespace ContactAPI.BusinessLayer
             {
                 contact = await db.Contact.FirstOrDefaultAsync(w => w.Id == id);
             }
-            return contact;
+            return contact!;
+        }
+        public virtual async Task<List<Contact>> GetAllByLocation(string location)
+        {
+            using (var db = new DirectoryDbContext())
+            {
+                return await db.Contact
+                               .AsNoTracking()
+                               .AsSplitQuery()
+                               .Where(w => w.Status != EntityLayer.Enums.Status.Deleted &&
+                                            w.ContactDetails.Any(a => a.Status != EntityLayer.Enums.Status.Deleted && a.InformationType == EntityLayer.Enums.InformationType.Address && a.Content.Contains(location)))
+                               .Include(w => w.ContactDetails.Where(w => w.Status != EntityLayer.Enums.Status.Deleted))
+                               .ToListAsync();
+            }
         }
     }
 }

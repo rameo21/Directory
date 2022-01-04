@@ -45,7 +45,7 @@ namespace ContactAPI.BusinessLayer
             return contactDetails;
         }
 
-        public async Task<List<ContactDetail>> GetByContactId(int contactId)
+        public async Task<List<ContactDetail>> GetAllByContactId(int contactId)
         {
             var contactDetails = new List<ContactDetail>();
             using (var db = new DirectoryDbContext())

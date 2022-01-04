@@ -49,12 +49,7 @@ namespace ReportRequestBGService
                         var locationContactCount = contacts.Count();
                         var locationPhoneCount = contacts.Sum(w => w.ContactDetailDtos.Where(w => w.InformationType == ReportAPI.EntityLayer.Enum.InformationType.Phone).Count());
 
-                        /* 
-                         *  locationContactCount ve locationPhoneCount deðerleri excel olarak bir CDN'e kaydedilir
-                         *  ve cnd'in linki report nesnesini Value deðiþkenine girilerek durumu Tamamlanmýþ olarak veritabanýna kaydedilir.
-                         */
-
-                        report.Value = "Remote CDN Url";
+                        report.Value = "/getReport";  
                         report.ReportStatus = ReportAPI.EntityLayer.Enum.ReportStatus.Done;
                         await _reportService.Update(report);
 

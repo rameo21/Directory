@@ -13,7 +13,7 @@ namespace ContactAPI.Infrastructure
         public Task<ContactDetail> Update(ContactDetail contact);
         public Task<ContactDetail> Delete(ContactDetail contact);
         public Task<ContactDetail> GetById(int id);
-        public Task<List<ContactDetail>> GetByContactId(int contactId);
+        public Task<List<ContactDetail>> GetAllByContactId(int contactId);
         public Task<List<ContactDetail>> GetAll();
     }
 }

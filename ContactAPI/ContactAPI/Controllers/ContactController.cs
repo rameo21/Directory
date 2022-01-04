@@ -31,7 +31,7 @@ namespace ContactAPI.Controllers
                 if (contact == null)
                     return NotFound();
 
-                contact.ContactDetails = await _contactDetailService.GetByContactId(contact.Id);
+                contact.ContactDetails = await _contactDetailService.GetAllByContactId(contact.Id);
 
                 return Ok(contact);
             }
@@ -47,6 +47,23 @@ namespace ContactAPI.Controllers
             try
             {
                 var contacts = await _contactService.GetAll();
+                if (!contacts.Any())
+                    return NotFound();
+
+                return Ok(contacts);
+            }
+            catch (Exception Ex)
+            {
+                _logger.LogError(Ex, "Contact/GetAll");
+                return StatusCode(500);
+            }
+        }  
+        [HttpGet("GetAllByLocation")]
+        public async Task<IActionResult> GetAllByLocation(string location)
+        {
+            try
+            {
+                var contacts = await _contactService.GetAllByLocation(location);
                 if (!contacts.Any())
                     return NotFound();
 

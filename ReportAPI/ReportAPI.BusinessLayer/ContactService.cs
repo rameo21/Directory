@@ -12,11 +12,11 @@ namespace ReportAPI.BusinessLayer
 {
     public class ContactService : IContactService
     {
-        private readonly string ContactServiceHost = "https://localhost:7127/gateway/";
+        private readonly string ContactServiceHost = "https://localhost:7127/api/";
 
         public async Task<List<ContactDto>> GetAllByLocation(string location)
         {
-            var client = new RestClient($"{ContactServiceHost}/contact/getAllByLocation?location={location}");
+            var client = new RestClient($"{ContactServiceHost}/contact/GetAllByLocation?location={location}");
             client.Timeout = -1;
             var request = new RestRequest(Method.GET);
             IRestResponse response = client.Execute(request);

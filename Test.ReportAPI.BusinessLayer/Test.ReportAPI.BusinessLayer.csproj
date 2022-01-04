@@ -21,8 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ContactAPI.Business\ContactAPI.BusinessLayer.csproj" />
-    <ProjectReference Include="..\..\ContactAPI.Models\ContactAPI.EntityLayer.csproj" />
+    <ProjectReference Include="..\ReportAPI.EntityLayer\ReportAPI.EntityLayer.csproj" />
+    <ProjectReference Include="..\ReportAPI\ReportAPI.BusinessLayer\ReportAPI.BusinessLayer.csproj" />
   </ItemGroup>
 
 </Project>
