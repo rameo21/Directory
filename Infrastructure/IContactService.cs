@@ -14,5 +14,6 @@ namespace ContactAPI.Infrastructure
         public Task<Contact> Delete(Contact contact);
         public Task<Contact> GetById(int id);
         public Task<List<Contact>> GetAll();
+        public Task<List<Contact>> GetAllByLocation(string locatin);
     }
 }

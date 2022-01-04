@@ -38,19 +38,19 @@ namespace ContactAPI.Controllers
                 return StatusCode(500);
             }
         }
-        [HttpGet("GetByContactId")]
-        public async Task<IActionResult> GetByContactId(int contactId)
+        [HttpGet("GetAllByContactId")]
+        public async Task<IActionResult> GetAllByContactId(int contactId)
         {
             try
             {
-                var contactDetail = await _contactDetailService.GetByContactId(contactId);
+                var contactDetail = await _contactDetailService.GetAllByContactId(contactId);
                 if (contactDetail == null)
                     return NotFound();
                 return Ok(contactDetail);
             }
             catch (Exception Ex)
             {
-                _logger.LogError(Ex, "ContactDetail/GetByContactId");
+                _logger.LogError(Ex, "ContactDetail/GetAllByContactId");
                 return StatusCode(500);
             }
         }
@@ -95,7 +95,7 @@ namespace ContactAPI.Controllers
                 var contactDetail = await _contactDetailService.GetById(id);
                 contactDetail = contactDetailDto.Adapt(contactDetail);
                 await _contactDetailService.Update(contactDetail);
-                return Ok();
+                return Ok(contactDetail);
             }
             catch (Exception Ex)
             {
