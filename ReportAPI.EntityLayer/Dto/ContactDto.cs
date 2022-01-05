@@ -1,17 +1,14 @@
-﻿using ContactAPI.EntityLayer.Enums;
+﻿using ReportAPI.EntityLayer.Enum;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ContactAPI.EntityLayer.Entity
+namespace ReportAPI.EntityLayer.Dto
 {
-    public class Contact
+    public class ContactDto
     {
-        [Key]
         public int Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
@@ -22,9 +19,6 @@ namespace ContactAPI.EntityLayer.Entity
         public DateTime? UpdateDate { get; set; }
         public DateTime? DeleteDate { get; set; }
 
-
-        [ForeignKey("ContactId")]
-        public virtual List<ContactDetail> ContactDetails { get; set; }
-
+        public  List<ContactDetailDto> ContactDetailDtos { get; set; }
     }
 }

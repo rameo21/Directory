@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ContactAPI.Models\ContactAPI.EntityLayer.csproj" />
+  </ItemGroup>
+
 </Project>

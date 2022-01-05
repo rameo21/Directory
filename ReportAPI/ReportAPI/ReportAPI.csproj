@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Mapster" Version="7.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -21,9 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ContactAPI.Business\ContactAPI.BusinessLayer.csproj" />
-    <ProjectReference Include="..\..\ContactAPI.Data\ContactAPI.DataLayer.csproj" />
-    <ProjectReference Include="..\..\Infrastructure\ContactAPI.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\ReportAPI.DataLayer\ReportAPI.DataLayer.csproj" />
+    <ProjectReference Include="..\ReportAPI.BusinessLayer\ReportAPI.BusinessLayer.csproj" />
+    <ProjectReference Include="..\ReportAPI.Infrastructure\ReportAPI.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

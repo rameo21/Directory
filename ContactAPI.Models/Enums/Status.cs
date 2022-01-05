@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ContactAPI.Infrastructure
+namespace ContactAPI.EntityLayer.Enums
 {
-    public interface IContactServices
+    public enum Status
     {
-
+        Active,
+        Pasive,
+        Deleted
     }
 }

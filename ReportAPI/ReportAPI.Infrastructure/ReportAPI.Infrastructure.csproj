@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ContactAPI.Data\ContactAPI.DataLayer.csproj" />
-    <ProjectReference Include="..\Infrastructure\ContactAPI.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\ReportAPI.EntityLayer\ReportAPI.EntityLayer.csproj" />
   </ItemGroup>
 
 </Project>

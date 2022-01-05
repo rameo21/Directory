@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-ReportRequestBGService-F931CD60-4BF4-44AD-BF9B-76593A6B77A0</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="6.0.0" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReportAPI\ReportAPI.BusinessLayer\ReportAPI.BusinessLayer.csproj" />
+    <ProjectReference Include="..\ReportAPI\ReportAPI.Infrastructure\ReportAPI.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
